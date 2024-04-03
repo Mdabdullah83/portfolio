@@ -1,0 +1,156 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.container{
+  width: 100vw;
+  display:flex;
+  flex-direction : column;
+  overflow:scroll;
+ // justify-content:center;
+  background-color: #565856;
+  width: 80%;
+  height: 90%;
+  align-items: center;
+  padding: 2em;
+}
+p:hover::before{
+  content: attr(tool-tip);
+  position: absolute;
+  margin-top: 1.8em;
+  margin-left: 3em;
+  background-color:#4d4d4d;
+  color: white;
+  font-weight:bold;
+  padding:0.3em;
+  font-size: 12px;
+border-radius:0.5em;
+}
+textarea{
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 3px;
+  outline:none;
+  border:none;
+  width: 90%;
+}
+.container input[type = "submit"]{
+  margin-top: 10px;
+  background-color: #f2023e;
+  color: white;
+  border: 0;
+  border-radius: 0.5em;
+  font-weight: bolder;
+  padding: 0.2em;
+  cursor:pointer;
+  margin-bottom: 10px;
+  width:60%;
+  font-size: 1.2em;
+  transition: all 0.4s ease-in-out;
+}
+
+.container input[type = "submit"]:hover{
+  transform:scale(1.1);
+  box-shadow: 0 0 20px 2px #f95858;
+}
+.container input[type = "submit"]:focus{
+  transform:scale(1.1);
+  box-shadow: 0 0 20px 2px #f95858;
+}
+
+.main{
+  width:100vw;
+  height:100vh;
+display:flex;
+  align-items: center;
+justify-content:center;
+
+
+}
+button{
+  align-self:start;
+}
+.msg{
+  display:none;
+}
+.msg_show{
+  color:white;
+  background-color: teal;
+  font-weight:bolder;
+  flex-wrap:wrap;
+  width: 50vw;
+  height:auto;
+  text-align: center;
+  padding: 1em;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+.title{
+  font-size: 1.5em;
+  color: #4ae8e8;
+  text-decoration:underline;
+  font-weight: bolder;
+  margin-bottom:5px;
+  margin-left:-2em;
+}
+.guide{
+  color:white;
+  background-color:purple;
+  border-radius:5px;
+  padding:0.5em;
+  margin-bottom:10px;
+  font-size: 1.1em;
+  width:80%;
+  font-weight:bolder;
+}
+.guide span, .msg_show span{
+  background-color:#0284d4;
+  font-weight: 800;
+  padding: 0.2em;
+  color: white;
+  border-radius: 5px;
+  font-family: "Courier";
+}
+
+.overlay input{
+  margin-top: 10px;
+  padding: 0.5em;
+  font-size: 1.2em;
+  outline: 0;
+  border: 0;
+  width : 100%;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.overlay input:focus{
+  transform:scale(1.06);
+  font-weight:bold;
+}
+.overlay{
+  background-color: #e3dede;
+  padding: 1.5em;
+  margin: 10px 0 10px 0;
+  border: #f74040 solid;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px #f96262;
+}
+.overlay .wel_msg{
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+.hidden{
+  display:none;
+}
+a{
+  text-decoration:none;
+  color:white;
+   font-family: "Courier";
+}
